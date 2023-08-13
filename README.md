@@ -30,7 +30,7 @@ buttons.forEach((button) => {
 });
 ```
 
-![alt text](./1-color-changer/colorChanger.png)
+![Color Changer](./1-color-changer/colorChanger.png)
 
 ## 2. BMI Calculator
 
@@ -57,4 +57,4 @@ form.addEventListener("submit", (event) => {
 });
 ```
 
-![alt text](./2-BMICalculator/bmiCalculator.png)
+![BMI calculator](./2-BMICalculator/bmiCalculator.png)
