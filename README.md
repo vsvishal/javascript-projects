@@ -58,3 +58,18 @@ form.addEventListener("submit", (event) => {
 ```
 
 ![BMI calculator](./2-BMICalculator/bmiCalculator.png)
+
+## 3. Digital Clock
+
+## Solution
+
+```javascript
+const clock = document.querySelector("#clock");
+
+setInterval(() => {
+  let date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+```
+
+![Digital Clock](./3-DigitalClock/DigitalClock.png)
