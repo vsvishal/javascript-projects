@@ -2,7 +2,7 @@
 
 ## 1. Color Changer
 
-## solution
+## Solution
 
 ```javascript
 const buttons = document.querySelectorAll(".button");
@@ -30,9 +30,11 @@ buttons.forEach((button) => {
 });
 ```
 
+![alt text](./1-color-changer/colorChanger.png)
+
 ## 2. BMI Calculator
 
-## solution
+## Solution
 
 ```javascript
 const form = document.querySelector("form");
@@ -54,3 +56,5 @@ form.addEventListener("submit", (event) => {
   }
 });
 ```
+
+![alt text](./2-BMICalculator/bmiCalculator.png)
