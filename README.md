@@ -73,3 +73,41 @@ setInterval(() => {
 ```
 
 ![Digital Clock](./3-DigitalClock/DigitalClock.png)
+
+## 4. Automatic Background color changer (Events)
+
+## Solution
+
+```javascript
+const randomHexColor = function () {
+  const hex = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  console.log(`color: ${color}`);
+  return color;
+};
+
+let intervalId;
+const startChangingColor = function () {
+  if (!intervalId) {
+    intervalId = setInterval(changeBgColor, 1000);
+  }
+
+  function changeBgColor() {
+    document.body.style.backgroundColor = randomHexColor();
+  }
+};
+
+const stopChangingColor = function () {
+  clearInterval(intervalId);
+  intervalId = null;
+};
+
+document.querySelector("#start").addEventListener("click", startChangingColor);
+
+document.querySelector("#stop").addEventListener("click", stopChangingColor);
+```
+
+![Automatic Background color changer](./4-bg-automatic-colorchanger/automatic-bgcolor-change.png)
