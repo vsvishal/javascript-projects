@@ -120,8 +120,7 @@ document.querySelector("#stop").addEventListener("click", stopChangingColor);
 const insert = document.querySelector("#insert");
 
 window.addEventListener("keydown", (e) => {
-  insert.innerHTML = `
-        <div class="color">
+  insert.innerHTML = `        <div class="color">
             <table>
                 <tr>
                     <th>Key</th>
@@ -135,8 +134,12 @@ window.addEventListener("keydown", (e) => {
                 </tr>
             </table>
         </div> 
-    `;
+   `;
 });
 ```
 
 ![Keyboard key press event](./5-keyboardEvent/keyboard-key-event.png)
+
+```
+
+```
